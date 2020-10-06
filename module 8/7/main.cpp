@@ -2,6 +2,8 @@
 using namespace std;
 
 int main() {
+    system("chcp 65001");
+
     cout << "Банкомат-2\n";
     cout << "======================\n";
 
