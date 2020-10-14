@@ -24,7 +24,7 @@ int main() {
         || (firstX == thirdX && firstY == thirdY)
         || (secondX == thirdX && secondY == thirdY)) {
         cout << "Точки совпадают.\n";
-    } else if () {
-
-    }
+    } else if ((firstX - secondX)/(firstY - secondY) == (firstX - thirdX)/(firstY - thirdY)) {
+        cout << "False.\n";
+    } else cout << "True.\n";
 }
