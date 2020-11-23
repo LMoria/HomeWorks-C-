@@ -16,14 +16,11 @@ int main() {
     cin >> todayDay >> todayMonth >> todayYear;
 
 
-    if ((todayYear - birthdayYear < 18)
-               || ((todayYear - birthdayYear == 18) && (birthdayMonth == todayMonth) && (todayDay < birthdayDay)) ) {
-        cout << "Несовершеннолетним алкоголь не продают. \n";
-    } else if ( (todayYear - birthdayYear > 18)
+    if ( (todayYear - birthdayYear > 18)
                 || ((todayYear - birthdayYear == 18) && (birthdayMonth < todayMonth))
                 || ((todayYear - birthdayYear == 18) && (birthdayMonth == todayMonth) && (todayDay > birthdayDay)) ) {
         cout << "Что предпочитаете?. \n";
     } else if ((todayYear - birthdayYear == 18) && (birthdayMonth == todayMonth) && (todayDay == birthdayDay)) {
         cout << "Приходите завтра. \n";
-    }
+    } else cout << "Несовершеннолетним алкоголь не продают. \n";
 }
