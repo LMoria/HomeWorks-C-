@@ -1,5 +1,4 @@
 #include <iostream>
-#include <math.h>
 using namespace std;
 
 int main() {
@@ -24,7 +23,7 @@ int main() {
         || (firstX == thirdX && firstY == thirdY)
         || (secondX == thirdX && secondY == thirdY)) {
         cout << "Точки совпадают.\n";
-    } else if ((firstX - secondX)/(firstY - secondY) == (firstX - thirdX)/(firstY - thirdY)) {
+    } else if ((thirdX * (secondY - firstY)) - (thirdY * (secondX - firstX)) == (firstX * secondY) - (secondX * firstY)) {
         cout << "False.\n";
     } else cout << "True.\n";
 }
